@@ -1,0 +1,1 @@
+my @array = (1, 2, 3); my $size = @array; # Get the size of the array. for my $i (0..$size -1) {  my $element = $array[$i]; # Access the element within bounds.  print "Element $i: $element\n"; } # OR use a safer method:  my $element = $array[2] if @array >=3; # only assign element if index is valid
